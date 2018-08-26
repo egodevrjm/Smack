@@ -9,6 +9,11 @@
 import UIKit
 
 class LoginVC: UIViewController {
+    
+    //MARK: Variables
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

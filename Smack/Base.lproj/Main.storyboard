@@ -106,6 +106,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
+                        <outlet property="avatarIcon" destination="kLa-Yr-Uhh" id="JSb-cb-CzJ"/>
                         <outlet property="loginButton" destination="jai-yJ-tmQ" id="HdN-aE-9oO"/>
                         <segue destination="n2i-Qb-XpW" kind="show" identifier="toLogin" id="JT2-dD-eHD"/>
                     </connections>
@@ -173,7 +174,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="0rl-bL-tyc"/>
                                         </constraints>
-                                        <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.74522128809999999" green="0.15828408329999999" blue="0.078962897759999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -190,7 +191,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="VGK-Hp-wiV"/>
                                         </constraints>
-                                        <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.74522128809999999" green="0.15828408329999999" blue="0.078962897759999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
@@ -372,7 +373,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="vgx-3F-N9U"/>
                                         </constraints>
-                                        <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.74522128809999999" green="0.15828408329999999" blue="0.078962897759999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" textContentType="username"/>
                                     </textField>
@@ -389,7 +390,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="abR-BS-cBL"/>
                                         </constraints>
-                                        <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.74522128809999999" green="0.15828408329999999" blue="0.078962897759999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
@@ -406,7 +407,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="4Io-Tt-H5X"/>
                                         </constraints>
-                                        <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.74522128809999999" green="0.15828408329999999" blue="0.078962897759999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>

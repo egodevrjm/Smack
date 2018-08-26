@@ -13,6 +13,11 @@ class ChatVC: UIViewController {
     //MARK: Outlets
     @IBOutlet weak var menuButton: UIButton!
     
+    //MARK: Variables
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         createSlideMenu()

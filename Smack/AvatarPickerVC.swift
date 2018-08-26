@@ -16,7 +16,11 @@ class AvatarPickerVC: UIViewController {
     
     //MARK: Variables
     var avatarType = AvatarType.dark
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
