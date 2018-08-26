@@ -20,6 +20,7 @@
 		70F5F0892132F21500B0906B /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F5F0882132F21500B0906B /* CreateAccountVC.swift */; };
 		70F5F08C21330B6200B0906B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F5F08B21330B6200B0906B /* AuthService.swift */; };
 		70F5F08E213316BC00B0906B /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F5F08D213316BC00B0906B /* RoundedButton.swift */; };
+		70F5F090213328DF00B0906B /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F5F08F213328DF00B0906B /* UserDataService.swift */; };
 		D0E136F5968978578A636429 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13979809C0A1FFD9EA0A7179 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		70F5F0882132F21500B0906B /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		70F5F08B21330B6200B0906B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		70F5F08D213316BC00B0906B /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		70F5F08F213328DF00B0906B /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		D2C8A84978496755E91A470C /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				70F5F08B21330B6200B0906B /* AuthService.swift */,
+				70F5F08F213328DF00B0906B /* UserDataService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				70F5F0802132D03D00B0906B /* ChannelVC.swift in Sources */,
 				70F5F08E213316BC00B0906B /* RoundedButton.swift in Sources */,
 				70F5F07E2132D02B00B0906B /* ChatVC.swift in Sources */,
+				70F5F090213328DF00B0906B /* UserDataService.swift in Sources */,
 				70F5F0892132F21500B0906B /* CreateAccountVC.swift in Sources */,
 				70F5F0872132EFE100B0906B /* LoginVC.swift in Sources */,
 				70F5F0822132D49A00B0906B /* GradientView.swift in Sources */,
