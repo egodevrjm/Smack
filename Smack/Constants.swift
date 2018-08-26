@@ -15,6 +15,7 @@ let BASE_URL = "https://buzzupchat.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
+let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
 
 //MARK: Colors
 let BUZZ_RED_PLACEHOLDER = #colorLiteral(red: 0.8129906058, green: 0.01060497388, blue: 0, alpha: 0.5)
@@ -36,3 +37,4 @@ let USER_EMAIL = "userEmail"
 //MARK: Headers
 
 let HEADER = ["Content-Type" : "Application/json; charset=utf-8"]
+let BEARER_HEADER = ["Authorization": "Bearer \(AuthService.instance.authToken)", "Content-Type" : "Application/json; charset=utf-8"]

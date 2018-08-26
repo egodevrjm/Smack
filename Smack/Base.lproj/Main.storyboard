@@ -205,6 +205,10 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="v2L-VN-EW2">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.74522128809999999" green="0.15828408329999999" blue="0.078962897759999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7v-8g-RG6" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="286" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.74522128809999999" green="0.15828408329999999" blue="0.078962897759999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -221,10 +225,14 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="n2i-Qb-XpW" eventType="touchUpInside" id="eZO-3g-TYh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="v2L-VN-EW2" firstAttribute="centerX" secondItem="t48-ya-pgi" secondAttribute="centerX" id="2dV-Kp-ZxW"/>
                             <constraint firstItem="W7v-8g-RG6" firstAttribute="centerX" secondItem="t48-ya-pgi" secondAttribute="centerX" id="B65-p3-6XJ"/>
                             <constraint firstItem="W7v-8g-RG6" firstAttribute="top" secondItem="8NM-GF-oCT" secondAttribute="bottom" constant="40" id="I4B-6H-KEL"/>
                             <constraint firstItem="hCn-c5-XES" firstAttribute="centerX" secondItem="t48-ya-pgi" secondAttribute="centerX" id="Lcm-cA-UNC"/>
@@ -234,11 +242,15 @@
                             <constraint firstItem="pZx-Vl-vHs" firstAttribute="centerX" secondItem="t48-ya-pgi" secondAttribute="centerX" id="Xs0-r7-itn"/>
                             <constraint firstItem="pZx-Vl-vHs" firstAttribute="top" secondItem="CL9-py-HcV" secondAttribute="top" constant="60" id="iJW-4G-mJw"/>
                             <constraint firstItem="8NM-GF-oCT" firstAttribute="centerX" secondItem="t48-ya-pgi" secondAttribute="centerX" id="k2Y-26-1Fg"/>
+                            <constraint firstItem="v2L-VN-EW2" firstAttribute="centerY" secondItem="t48-ya-pgi" secondAttribute="centerY" constant="-100" id="olx-Qx-sVo"/>
                             <constraint firstItem="hCn-c5-XES" firstAttribute="top" secondItem="W7v-8g-RG6" secondAttribute="bottom" id="x3T-IC-fLt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CL9-py-HcV"/>
                     </view>
                     <connections>
+                        <outlet property="passwordText" destination="Yss-W2-bLc" id="yFH-nt-wOQ"/>
+                        <outlet property="spinner" destination="v2L-VN-EW2" id="Q63-Yl-ZWu"/>
+                        <outlet property="usernameText" destination="KPA-AD-G8W" id="SIZ-36-66k"/>
                         <segue destination="JHt-sF-sJd" kind="show" identifier="toCreateAccount" id="PWS-CN-cPL"/>
                     </connections>
                 </viewController>
