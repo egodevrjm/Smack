@@ -18,6 +18,7 @@
 		70F5F0852132EBA000B0906B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F5F0842132EBA000B0906B /* Constants.swift */; };
 		70F5F0872132EFE100B0906B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F5F0862132EFE100B0906B /* LoginVC.swift */; };
 		70F5F0892132F21500B0906B /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F5F0882132F21500B0906B /* CreateAccountVC.swift */; };
+		70F5F08C21330B6200B0906B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F5F08B21330B6200B0906B /* AuthService.swift */; };
 		D0E136F5968978578A636429 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13979809C0A1FFD9EA0A7179 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		70F5F0842132EBA000B0906B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		70F5F0862132EFE100B0906B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		70F5F0882132F21500B0906B /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		70F5F08B21330B6200B0906B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		D2C8A84978496755E91A470C /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 		704F531A2132C8B3001C1087 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				70F5F08A21330B4D00B0906B /* Services */,
 				70F5F0832132EB8B00B0906B /* Utilities */,
 				70F5F07C2132D00000B0906B /* Model */,
 				70F5F07B2132CFFB00B0906B /* View */,
@@ -139,6 +142,14 @@
 				70F5F0842132EBA000B0906B /* Constants.swift */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		70F5F08A21330B4D00B0906B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				70F5F08B21330B6200B0906B /* AuthService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		A87F3FBF55AEC58C65952497 /* Pods */ = {
@@ -274,6 +285,7 @@
 				70F5F0892132F21500B0906B /* CreateAccountVC.swift in Sources */,
 				70F5F0872132EFE100B0906B /* LoginVC.swift in Sources */,
 				70F5F0822132D49A00B0906B /* GradientView.swift in Sources */,
+				70F5F08C21330B6200B0906B /* AuthService.swift in Sources */,
 				704F531C2132C8B3001C1087 /* AppDelegate.swift in Sources */,
 				70F5F0792132CE1F00B0906B /* SWRevealViewController.m in Sources */,
 				70F5F0852132EBA000B0906B /* Constants.swift in Sources */,
