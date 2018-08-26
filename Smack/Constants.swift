@@ -16,6 +16,9 @@ let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
 
+//MARK: Colors
+let BUZZ_RED_PLACEHOLDER = #colorLiteral(red: 0.8129906058, green: 0.01060497388, blue: 0, alpha: 0.5)
+
 //MARK: Segues
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
