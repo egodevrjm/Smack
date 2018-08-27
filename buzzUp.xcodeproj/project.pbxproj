@@ -32,7 +32,7 @@
 /* Begin PBXFileReference section */
 		13979809C0A1FFD9EA0A7179 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F7EB2DFD73344BFE91E9234 /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
-		704F53182132C8B3001C1087 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		704F53182132C8B3001C1087 /* buzzUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = buzzUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		704F531B2132C8B3001C1087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		704F53202132C8B3001C1087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		704F53222132C8B5001C1087 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		704F53192132C8B3001C1087 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				704F53182132C8B3001C1087 /* Smack.app */,
+				704F53182132C8B3001C1087 /* buzzUp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,9 +193,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		704F53172132C8B3001C1087 /* Smack */ = {
+		704F53172132C8B3001C1087 /* buzzUp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 704F532A2132C8B5001C1087 /* Build configuration list for PBXNativeTarget "Smack" */;
+			buildConfigurationList = 704F532A2132C8B5001C1087 /* Build configuration list for PBXNativeTarget "buzzUp" */;
 			buildPhases = (
 				A6DEC006531F2E99012851DF /* [CP] Check Pods Manifest.lock */,
 				704F53142132C8B3001C1087 /* Sources */,
@@ -207,9 +207,9 @@
 			);
 			dependencies = (
 			);
-			name = Smack;
+			name = buzzUp;
 			productName = Smack;
-			productReference = 704F53182132C8B3001C1087 /* Smack.app */;
+			productReference = 704F53182132C8B3001C1087 /* buzzUp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -228,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 704F53132132C8B3001C1087 /* Build configuration list for PBXProject "Smack" */;
+			buildConfigurationList = 704F53132132C8B3001C1087 /* Build configuration list for PBXProject "buzzUp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -241,7 +241,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				704F53172132C8B3001C1087 /* Smack */,
+				704F53172132C8B3001C1087 /* buzzUp */,
 			);
 		};
 /* End PBXProject section */
@@ -479,7 +479,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = uk.egoGames.Smack;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.egoGames.buzzUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Smack/Smack-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -501,7 +501,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = uk.egoGames.Smack;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.egoGames.buzzUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Smack/Smack-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
@@ -512,7 +512,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		704F53132132C8B3001C1087 /* Build configuration list for PBXProject "Smack" */ = {
+		704F53132132C8B3001C1087 /* Build configuration list for PBXProject "buzzUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				704F53282132C8B5001C1087 /* Debug */,
@@ -521,7 +521,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		704F532A2132C8B5001C1087 /* Build configuration list for PBXNativeTarget "Smack" */ = {
+		704F532A2132C8B5001C1087 /* Build configuration list for PBXNativeTarget "buzzUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				704F532B2132C8B5001C1087 /* Debug */,
