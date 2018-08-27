@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,8 +13,8 @@
         <!--ChannelVC-->
         <scene sceneID="1G5-oW-kUv">
             <objects>
-                <viewController id="Svr-Hd-K7h" customClass="ChannelVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eWP-8A-7Lb" customClass="GradientView" customModule="Smack" customModuleProvider="target">
+                <viewController id="Svr-Hd-K7h" customClass="ChannelVC" customModule="buzzUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eWP-8A-7Lb" customClass="GradientView" customModule="buzzUp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -33,7 +34,7 @@
                                 <rect key="frame" x="281" y="84" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kLa-Yr-Uhh" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kLa-Yr-Uhh" customClass="CircleImage" customModule="buzzUp" customModuleProvider="target">
                                 <rect key="frame" x="16" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="KmM-55-tLO"/>
@@ -44,7 +45,7 @@
                                 <rect key="frame" x="0.0" y="126" width="375" height="426"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="uwE-aH-x1a">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelCell" id="uwE-aH-x1a" customClass="ChannelCell" customModule="buzzUp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uwE-aH-x1a" id="FBh-yP-kB6">
@@ -64,6 +65,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="u7x-LN-TlH" id="EP9-vA-xGT"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -108,6 +112,7 @@
                     <connections>
                         <outlet property="avatarIcon" destination="kLa-Yr-Uhh" id="JSb-cb-CzJ"/>
                         <outlet property="loginButton" destination="jai-yJ-tmQ" id="HdN-aE-9oO"/>
+                        <outlet property="tableView" destination="woM-vl-EsV" id="6Xs-yK-Jnf"/>
                         <segue destination="n2i-Qb-XpW" kind="show" identifier="toLogin" id="JT2-dD-eHD"/>
                     </connections>
                 </viewController>
@@ -118,7 +123,7 @@
         <!--LoginVC-->
         <scene sceneID="9aV-sn-rN2">
             <objects>
-                <viewController id="n2i-Qb-XpW" customClass="LoginVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="n2i-Qb-XpW" customClass="LoginVC" customModule="buzzUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t48-ya-pgi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,7 +214,7 @@
                                 <rect key="frame" x="169" y="215" width="37" height="37"/>
                                 <color key="color" red="0.74522128809999999" green="0.15828408329999999" blue="0.078962897759999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7v-8g-RG6" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7v-8g-RG6" customClass="RoundedButton" customModule="buzzUp" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="286" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.74522128809999999" green="0.15828408329999999" blue="0.078962897759999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -261,12 +266,12 @@
         <!--ChatVC-->
         <scene sceneID="ePF-8L-x5S">
             <objects>
-                <viewController id="HkT-Dx-68a" customClass="ChatVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HkT-Dx-68a" customClass="ChatVC" customModule="buzzUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yrc-Jy-P6q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKR-3g-sE9" customClass="GradientView" customModule="Smack" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKR-3g-sE9" customClass="GradientView" customModule="buzzUp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jl2-uS-8jH">
@@ -340,7 +345,7 @@
         <!--Create AccountVC-->
         <scene sceneID="8gD-Cr-9BC">
             <objects>
-                <viewController id="JHt-sF-sJd" customClass="CreateAccountVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JHt-sF-sJd" customClass="CreateAccountVC" customModule="buzzUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Ua-VD-3qB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -433,7 +438,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fl5-UN-aBw" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fl5-UN-aBw" customClass="RoundedButton" customModule="buzzUp" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.74522128809999999" green="0.15828408329999999" blue="0.078962897759999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -453,7 +458,7 @@
                                     <action selector="createAccountPressed:" destination="JHt-sF-sJd" eventType="touchUpInside" id="8Yg-md-Iaf"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="WUv-gx-GYC" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="WUv-gx-GYC" customClass="CircleImage" customModule="buzzUp" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="299" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="qz0-EC-csu"/>
@@ -516,7 +521,7 @@
         <!--Avatar PickerVC-->
         <scene sceneID="jEP-S1-wTc">
             <objects>
-                <viewController id="iry-SM-8Dj" customClass="AvatarPickerVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iry-SM-8Dj" customClass="AvatarPickerVC" customModule="buzzUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YG4-Bc-c2c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -556,7 +561,7 @@
                                     <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="avatarCell" id="ja8-Kr-jtJ" customClass="AvatarCell" customModule="Smack" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="avatarCell" id="ja8-Kr-jtJ" customClass="AvatarCell" customModule="buzzUp" customModuleProvider="target">
                                         <rect key="frame" x="20" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
